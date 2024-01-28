@@ -1,0 +1,227 @@
+.my-container {
+    position: relative;
+}
+
+#bgImage {
+    background-image: url('../assets/bg-doodle.png');
+    width: 100%;
+    height: 645px;
+    opacity: 1;
+}
+
+.quote {
+    font-size: 24px;
+    white-space: normal;
+}
+
+.navbar {
+    position: relative;
+    background-color: transparent;
+    padding: 50px 20px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+        font-size: 30px;
+
+        li {
+            display: inline-block;
+            margin-right: 30px;
+
+            a {
+                text-decoration: none;
+                color: black;
+                transition: color 0.3s ease;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .curve {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        //   background: url('path-to-your-curved-lines-image.png') repeat-x center;
+    }
+
+    .oval {
+        width: 287px;
+        height: 300px;
+        background-color: #FF4500;
+        position: absolute;
+        left: -80px;
+        top: -7%;
+        transform: rotate(30deg);
+        border-radius: 50%;
+    }
+
+    .container {
+        position: relative;
+        width: 520px;
+        top: 71px;
+        left: 790px;
+        background: linear-gradient(#FF4500, #06065d);
+
+    }
+
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // background: linear-gradient(to right, blue 50%, #06065d 50%);
+        z-index: -1;
+        /* Ensure the background is behind the image */
+        // background-color: #06065d;
+    }
+
+    img {
+        width: 82%;
+        height: 125%;
+        object-fit: cover;
+        margin-left: 63px;
+    }
+
+    .banner {
+        position: absolute;
+        bottom: 30px;
+        left: 120px;
+        padding: 20px;
+        z-index: 1000;
+    }
+
+    .header {
+        background-color: #06065d;
+        font-size: 30px;
+        padding: 50px;
+        color: white;
+        border-radius: 0 200px 0px 200px;
+        white-space: nowrap;
+        /* Prevent line breaks */
+        overflow: hidden;
+    }
+
+    .header span {
+        display: inline-block;
+        animation: slide-in 5s infinite;
+        /* Play the animation initially */
+        animation-delay: 2s;
+    }
+
+    /* Define the keyframe animation */
+    @keyframes slide-in {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    .header:hover span {
+        animation: slide-in-hover 3s;
+    }
+
+    @keyframes slide-in-hover {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+    }
+
+
+
+    .banner-container {
+        text-align: center;
+        width: 360px;
+    }
+
+    .button-customized {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        border-radius: 30px;
+        padding: 29px 28px;
+        background-color: #FF4500;
+        font-size: 20px;
+    }
+}
+
+.flex-container {
+    display: flex;
+
+    .flex-item {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        height: 175px;
+        background-size: cover;
+        position: relative;
+    }
+
+    .bgImageClass {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    .colorDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+        z-index: 0;
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        /* Adjust font size as needed */
+        font-weight: bold;
+        z-index: 1;
+        /* Ensure the text is above the background and color div */
+        color: white;
+    }
+
+    img {
+        width: 100%;
+        height: 1000px;
+        object-fit: cover;
+    }
+
+
+}
+
+.bubble {
+    background-image: url('../assets/bubbllle.jpg');
+    width: 100%;
+    height: 645px;
+    top: 10%;
+    display: flex;
+}
+
+.part1 {
+    width: 45%;
+    /* Adjust as needed */
+    padding: 20px;
+}
+
+.part2 {
+    width: 55%;
+    /* Adjust as needed */
+    padding: 20px;
+}
