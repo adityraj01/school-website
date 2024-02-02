@@ -209,7 +209,6 @@
 .bubble {
     background-image: url('../assets/bubbllle.jpg');
     width: 100%;
-    height: 645px;
     top: 10%;
 }
 
@@ -243,4 +242,15 @@
   }
   
   
+  .box {
+    height: 285px;
+    width: 320px;
+    background-color: #f0f0f0;
+    border: 10px solid #40b5bc;
+    margin: 40px; /* Adjust margin as needed */
+    text-align: center;
+    line-height: 40px; /* Center content vertically */
+    border-radius: 100px 0 100px 0;
+    background-size: cover;
+  }
   
